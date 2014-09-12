@@ -71,10 +71,10 @@
 					    <h3>A method (well, methods...) used to store and manage location relative to a position or range of positions along a linear feature</h3>
 				    </section>
 				    <section>
-				    	<img src="/images/mile_marker.png">
+				    	<img src="images/mile_marker.png">
 				    </section>
                     <section>
-					    <iframe height="800" width="1280" src="http://192.168.0.2:8080/reaches/"></iframe>
+					    <iframe height="2000" width="2000" src="http://localhost:8080/reaches/"></iframe>
 				    </section>
 				    <!-- Demonstrate the show temporary reach tool workflow -->
                 </section>
@@ -83,7 +83,7 @@
                         <h1>Requirements</h1>
                     </section>
                     <section>
-                    	<img src="/images/the-gif.gif">
+                    	<img src="images/the-gif.gif">
                     	<h3>"highly specific yet infinitely flexible..."</h3>
                     </section>
                 </section>
@@ -93,7 +93,7 @@
                         <ul><li>Dynamic Data Model</li></ul>
                     </section>
                     <section>
-					    <iframe height="800" width="1280" src="http://192.168.0.2:8080/reaches/"></iframe>
+					    <iframe height="2000" width="2000" src="http://localhost:8080/reaches/"></iframe>
 				    </section>
 				    <!--  -->
                     <section>
@@ -106,7 +106,7 @@
                         </h2>
                     </section>
                     <section>
-					    <iframe height="800" width="1280" src="http://192.168.0.2:8080/reaches/"></iframe>
+					    <iframe height="2000" width="2000" src="http://localhost:8080/reaches/"></iframe>
 				    </section>
                     <section>
                         <h2>
@@ -116,7 +116,7 @@
                         </h2>
                     </section>
                     <section>
-					    <iframe height="800" width="1280" src="http://192.168.0.2:8080/reaches/"></iframe>
+					    <iframe height="2000" width="2000" src="http://localhost:8080/reaches/"></iframe>
 				    </section>
                     <section>
                         <h2>
@@ -127,7 +127,7 @@
                         </h2>
                     </section>
                     <section>
-					    <iframe height="800" width="1280" src="http://192.168.0.2:8080/reaches/"></iframe>
+					    <iframe height="2000" width="2000" src="http://localhost:8080/reaches/"></iframe>
 				    </section>
                 </section>
                 <section>
@@ -135,14 +135,20 @@
 					    <h1>Concerns/Issues</h1>
 				    </section>
                     <section>
-					    <h2>UI Complexity</h2>
+					    <h1>UI Complexity</h1>
+                        <h2>
                         <ul>
                             <li>Single Application to serve multiple agencies</li>
                             <li>Must be highly intuative to minimize/avoid training</li>
                         </ul>
+                        </h2>
 				    </section>
                     <section>
-					    <h2>Performance</h2>
+					    <h1>Performance</h1>
+                        <ul>
+                            <li>Dynamic Data Model</li>
+                            <li>Rendering Derived Geometries</li>
+                        </ul>
 				    </section>
                 </section>
                 <section>
@@ -150,10 +156,14 @@
 					    <h1>Approach/Platform</h1>
 				    </section>
                     <section>
-					    <h2>Corpsmap Platform</h2>
+					    <h1>Corpsmap Platform</h1>
                         <ul>
                             <li>Oracle</li>
                             <li>Mapserver</li>
+                            <ul>
+                                <li>Forked and added keyword to Oracle Driver</li>
+                                <li>INDEXFIELD</li>
+                            </ul>
                             <li>OpenLayers/ExtJS</li>
                         </ul>
 				    </section>
@@ -169,7 +179,7 @@
                             <li>Java Stack</li>
                             <ul>
                                 <li>Spring</li>
-                                <li>Self Hosted using Jetty 9</li>
+                                <li>Self Hosted using Jetty</li>
                                 <li>GeoTools 10</li>
                                 <li>GeoWebCache (embedded)</li>
                             </ul>
@@ -183,17 +193,28 @@
                             <li>Perform as much geoprocessing as possible in Oracle</li>
                                 <ul>
                                     <li>Use SDO linear referencing API</li>
-                                </ul>       
+                                </ul>
+                             <li>Only assemble/return the minimum required amount of data</li>       
                         </ul>
 				    </section>
                 </section>
                 <section>
                     <section>
-					    <h1>Proof Of Concept Implementation</h1>
+					    <h1>UAS</h1>
+                        <img src="images/UAV.gif" height="500" width="700"/>
 				    </section>
                     <section>
-					    <iframe height="800" width="1280" src="http://192.168.0.2:8080/reaches/"></iframe>
+                        <img src="images/viewer_flight_path.JPG"/>
 				    </section>
+                    <section>
+                        <img src="images/viewer_camera_centers.jpg"/>
+				    </section> 
+                    <section>
+                        <img src="images/viewer_camera_centers_preview.jpg"/>
+				    </section>
+                    <section>
+					    <iframe height="2000" width="2000" src="http://localhost:8080/reaches/"></iframe>
+				    </section> 
                 </section>
 
                 <section>
