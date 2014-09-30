@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>USACE Levees and Linear Referencing</title>
+		<title>USACE NLD KCUAG Demo</title>
 		<meta name="description" content="USACE Levees and Linear Referencing Presentation"/>
 		<meta name="author" content="RG/WB"/>
 
@@ -41,169 +41,102 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
+				<section data-background="#333343">
 					<h1>USACE</h1>
 					<h3>Levee Management using Linear Referencing</h3>
 				</section>
-                <section>
+                <section data-background="#FF3300">
                     <section>
 					    <h1>USACE Levees</h1>
-					    <h3>
+					    <h2>
                            <ul>
                             <li>Responsible for over 14,000 linear miles of levees</li>
                             <li>Historically managed as fixed length segments corresponding to ownership</li>
                            </ul>
-                        </h3>
+                        </h2>
 				    </section>
                     <section>
-					    <h2>Approach works well for USACE</h2>
-					    <h3>but</h3>
-                        <h2>Fails to effectively support other federal agencies and local partners.</h2>
+					    <h1>Approach works well for USACE</h1>
+					    <h1 class="fragment">but...</h1>
+                        <h1 class="fragment">Fails to effectively support other federal agencies and local partners.</h1>
 				    </section>
                     <section>
-					    <h2>Solution</h2>
-					    <h3>Add linear referencing to NLD</h3>
+					    <h3>Solution:</h3>
+					    <h1 class="fragment">Add linear referencing to NLD!</h1>
 				    </section>
                 </section>
-                <section>
+                <section data-background="#007777">
                     <section>
-					    <h2>Linear Referencing Defined</h2>
-					    <h3>A method (well, methods...) used to store and manage location relative to a position or range of positions along a linear feature</h3>
+					    <h1>Linear Referencing Defined</h1>
+					    <h2>A method <span class="fragment">(well, methods...)</span> used to store and manage location relative to a position or range of positions along a linear feature</h2>
 				    </section>
 				    <section>
-				    	<img src="/images/mile_marker.png">
+				    	<img src="images/mile_marker.png">
 				    </section>
                     <section>
-					    <iframe height="800" width="1280" src="http://192.168.0.2:8080/reaches/"></iframe>
+					    <iframe height="800" width="1280" src="https://moriverrecovery-s.usace.army.mil/reaches/"></iframe>
 				    </section>
 				    <!-- Demonstrate the show temporary reach tool workflow -->
                 </section>
-                <section>
+                <section data-background="#0029A6">
                     <section>
                         <h1>Requirements</h1>
                     </section>
                     <section>
-                    	<img src="/images/the-gif.gif">
-                    	<h3>"highly specific yet infinitely flexible..."</h3>
+                        <h1>User Defined Classes </h1>
+                       	<h2 class="fragment">(Reach Classes / Event Themes)</h2>
+                        <h1 class="fragment">Dynamic Data Model</h1>
                     </section>
+                    <section>
+					    <iframe height="800" width="1280" src="https://moriverrecovery-s.usace.army.mil/reaches/"></iframe>
+				    </section>
+				    <!-- Demonstrate the Create Reach Class Tool and how we can add attributes etc... -->
+                    <section>
+                        <h1>On-Line Reach Editing</h1>
+                    </section>
+                    <section>
+					    <iframe height="800" width="1280" src="https://moriverrecovery-s.usace.army.mil/reaches/"></iframe>
+				    </section>
+				    <!-- Demonstrate the online event editing capability -->
+                    <section>
+                        <h1>User-Defined Symbology</h1>
+                        <h2 class="fragment">Persistant User Defined Layers</h2>
+                    	<h1 class="fragment" >layer</h1>
+                    	<h1 class="fragment" >==</h1>
+                    	<h1 class="fragment" >data + symbology</h1>
+                    </section>
+                    <section>
+					    <iframe height="800" width="1280" src="https://moriverrecovery-s.usace.army.mil/reaches/"></iframe>
+				    </section>
+				    <!-- Demonstrate adding a layer with custom symbology -->
+                    <section>
+                        <h1>Desktop GIS Compatibility</h1>
+                        <h3 class="fragment">(export to shapefile)<h3>
+                    </section>
+                    <section>
+					    <iframe height="800" width="1280" src="https://moriverrecovery-s.usace.army.mil/reaches/"></iframe>
+				    </section>
+				    <!-- Demonstrate export to shapefile functionality and how dumb it is... -->
                 </section>
-                <section>
-                    <section>
-                        <h2>User Defined Feature Classes (Event Themes)</h2>
-                        <ul><li>Dynamic Data Model</li></ul>
-                    </section>
-                    <section>
-					    <iframe height="800" width="1280" src="http://192.168.0.2:8080/reaches/"></iframe>
-				    </section>
-				    <!--  -->
-                    <section>
-                        <h2>
-                            <ul>
-                                <li>User Defined Sybmology</li>
-                                <li>Persistant User Defined Layers</li>
-                                <ul><li> (data + symbology)</li></ul>
-                            </ul>
-                        </h2>
-                    </section>
-                    <section>
-					    <iframe height="800" width="1280" src="http://192.168.0.2:8080/reaches/"></iframe>
-				    </section>
-                    <section>
-                        <h2>
-                            <ul>
-                                <li>On Line Event Theme Editing</li>
-                            </ul>
-                        </h2>
-                    </section>
-                    <section>
-					    <iframe height="800" width="1280" src="http://192.168.0.2:8080/reaches/"></iframe>
-				    </section>
-                    <section>
-                        <h2>
-                            <ul>
-                                <li>Desktop GIS Compatibility</li>
-                                <li>(export to shapefile)</li>
-                            </ul>
-                        </h2>
-                    </section>
-                    <section>
-					    <iframe height="800" width="1280" src="http://192.168.0.2:8080/reaches/"></iframe>
-				    </section>
-                </section>
-                <section>
+                <section data-background="#7519D1">
                     <section>
 					    <h1>Concerns/Issues</h1>
 				    </section>
                     <section>
-					    <h2>UI Complexity</h2>
-                        <ul>
-                            <li>Single Application to serve multiple agencies</li>
-                            <li>Must be highly intuative to minimize/avoid training</li>
-                        </ul>
+					    <h1>UI Complexity</h1>
+                        <h2 class="fragment">Single Application to serve multiple agencies</h2>
+                        <h2 class="fragment">Must be highly intuative to minimize/avoid training</h2>
 				    </section>
                     <section>
-					    <h2>Performance</h2>
+					    <h1>Performance!!!</h1>
 				    </section>
                 </section>
                 <section>
-                    <section>
-					    <h1>Approach/Platform</h1>
-				    </section>
-                    <section>
-					    <h2>Corpsmap Platform</h2>
-                        <ul>
-                            <li>Oracle</li>
-                            <li>Mapserver</li>
-                            <li>OpenLayers/ExtJS</li>
-                        </ul>
-				    </section>
-                    <section>
-                        <ul>
-					        <li>Designed to leverage existing services</li>
-                            <li>Capable of providing all services internally</li>
-                        </ul>
-				    </section>
-                    <section>
-					    <h2>Application Server</h2>
-                        <ul>
-                            <li>Java Stack</li>
-                            <ul>
-                                <li>Spring</li>
-                                <li>Self Hosted using Jetty 9</li>
-                                <li>GeoTools 10</li>
-                                <li>GeoWebCache (embedded)</li>
-                            </ul>
-                        </ul>
-				    </section>
-                    <section>
-					    <h2>Database Approach</h2>
-                        <ul>
-                            <li>Provide flexible approach towards dynamic data</li>
-                                <ul><li>support conversion of dynamic data into traditional tables</li></ul>
-                            <li>Perform as much geoprocessing as possible in Oracle</li>
-                                <ul>
-                                    <li>Use SDO linear referencing API</li>
-                                </ul>       
-                        </ul>
-				    </section>
+                	<h1>Slides</h1>
+                	<h3 class="fragment">(minus live demo of course)</h3>
+                	<h1 class="fragment">willbreitkreutz.github.io/kcaug_presentation</h1>
                 </section>
-                <section>
-                    <section>
-					    <h1>Proof Of Concept Implementation</h1>
-				    </section>
-                    <section>
-					    <iframe height="800" width="1280" src="http://192.168.0.2:8080/reaches/"></iframe>
-				    </section>
-                </section>
-
-                <section>
-                	<h1>Slides (minus live demo)</h1>
-                	<h3>USACE-MMC.github.io/foss4g/reaches.html</h3>
-                </section>
-				
-
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -215,7 +148,7 @@
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
-				progress: true,
+				progress: false,
 				history: true,
 				center: true,
 
